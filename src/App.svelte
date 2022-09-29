@@ -1,11 +1,19 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+  // import svelteLogo from './assets/svelte.svg'
+  // import Counter from './lib/Counter.svelte'
+  import Box from './lib/Boxe.svelte'
 </script>
 
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank"> 
+  <div class='main-div'>
+    <Box/><Box/><Box/><Box/><Box/>
+    <Box/><Box/><Box/><Box/><Box/>
+    <Box/><Box/><Box/><Box/><Box/>
+    <Box/><Box/><Box/><Box/><Box/>
+    <Box/><Box/><Box/><Box/><Box/>
+    
+   
+    <!-- <a href="https://vitejs.dev" target="_blank"> 
       <img src="/vite.svg" class="logo" alt="Vite Logo" />
     </a>
     <a href="https://svelte.dev" target="_blank"> 
@@ -15,20 +23,32 @@
   <h1>Vite + Svelte</h1>
 
   <div class="card">
-    <Counter />
+    <Counter /> -->
   </div>
 
-  <p>
+  <!-- <p>
     Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank">SvelteKit</a>, the official Svelte app framework powered by Vite!
   </p>
 
   <p class="read-the-docs">
     Click on the Vite and Svelte logos to learn more
-  </p>
+  </p> -->
 </main>
 
 <style>
-  .logo {
+  .main-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2vw;
+    justify-content: center;
+    
+  }
+  main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  /* .logo {
     height: 6em;
     padding: 1.5em;
     will-change: filter;
@@ -41,5 +61,5 @@
   }
   .read-the-docs {
     color: #888;
-  }
+  } */
 </style>
