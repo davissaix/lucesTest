@@ -1,6 +1,6 @@
 <script lang='ts'>
 // const red = rgb(219 34 34);
-import { css } from '@emotion/css'
+
 
 let colores = []    
 
